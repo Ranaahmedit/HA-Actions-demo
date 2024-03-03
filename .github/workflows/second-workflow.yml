@@ -1,0 +1,15 @@
+name: second-workflow
+on: 
+  repository_dispatch:
+    types: [test]
+  push: 
+    branches:
+      - "master"
+jobs: 
+  first-workflow-job:
+    name: first-job
+    runs-on: ubuntu-latest      
+    steps:
+      - name: run bash command
+        run : ls
+        shell: bash 
