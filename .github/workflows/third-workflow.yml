@@ -1,4 +1,4 @@
-name: second-workflow
+name: thired-workflow
 on: 
    workflow_dispatch:
      inputs:
